@@ -1,0 +1,67 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+}
+
+.form-container div {
+    margin: 10px 0;
+}
+
+.form-container label {
+    font-weight: bold;
+}
+
+.form-container input[type="text"],
+.form-container input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.can-btn,
+.sub-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.can-btn {
+    background-color: #ccc;
+}
+
+.sub-btn {
+    background-color: #007bff;
+}
+
+.sub-btn:hover {
+    background-color: #0062cc;
+}
+
+.toast-container {
+    font-size: 16px;
+}

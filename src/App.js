@@ -1,10 +1,17 @@
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import DisplayPage from "./components/DisplayPage";
+import Form from "./components/Form";
+import ErrorPage from "./components/ErrorPage";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Test</h1>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<DisplayPage />} />
+        <Route path="/form" element={<Form />} />
+        <Route path="*" element={<ErrorPage />} />
+      </Routes>
+    </Router>
   );
 }
 
